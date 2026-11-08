@@ -1,0 +1,7 @@
+jarvis-cmd-plex
+Copyright 2026 opticon454
+
+Licensed under the Apache License, Version 2.0. See LICENSE.
+
+Uses Plex Media Server HTTP API (https://www.plex.tv/) through the requests library (Apache-2.0), and mpv (GPL-2.0+) as a separate program.
+This package is not affiliated with or endorsed by Plex.

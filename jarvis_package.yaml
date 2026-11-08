@@ -1,0 +1,42 @@
+name: "plex_play"
+display_name: "Plex Play"
+description: "Say \"play Hysteria by Muse on Plex\" and the node plays it from your own Plex server through its speaker."
+version: "0.1.0"
+min_jarvis_version: "0.9.0"
+license: Apache-2.0
+author:
+  github: "opticon454"
+categories: ["media"]
+keywords: ["plex", "play", "music", "song", "album", "artist", "playlist"]
+
+components:
+  - type: command
+    name: plex_play
+    path: commands/plex_play/command.py
+
+packages:
+  - name: requests
+    version: ">=2.31.0"
+
+secrets:
+  - key: PLEX_URL
+    scope: integration
+    value_type: string
+    required: true
+    is_sensitive: false
+    description: "Address of your Plex server, e.g. http://192.168.1.10:32400"
+    friendly_name: "Server URL"
+  - key: PLEX_TOKEN
+    scope: integration
+    value_type: string
+    required: true
+    is_sensitive: true
+    description: "Your Plex token (X-Plex-Token)"
+    friendly_name: "Plex token"
+  - key: PLEX_LIBRARY
+    scope: integration
+    value_type: string
+    required: false
+    is_sensitive: false
+    description: "Name of the music library to search (default: all)"
+    friendly_name: "Music library"
