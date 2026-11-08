@@ -1,5 +1,7 @@
 # jarvis-cmd-plex
 
+> **Archived on 20261108 and no longer maintained.** Jarvis is using [Music Assistant](https://github.com/music-assistant) as its music integration point. Spotify and Pandora keep their own packages for power users, and Music Assistant covers every other service, so a package per service is not needed. Use [jarvis-cmd-music-assistant](https://github.com/alexberardi/jarvis-cmd-music-assistant) instead. The code here was a draft, tested only against a fake server.
+
 A [Jarvis](https://github.com/alexberardi/jarvis-server) Pantry package that plays music from your own Plex Media Server through the node's speaker.
 
 ## What you can say
